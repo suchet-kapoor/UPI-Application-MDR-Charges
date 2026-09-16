@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/UPI_MDR_Consumer_Guide.html"
+    }
+  ]
+}
