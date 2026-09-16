@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UPI MDR — You Pay ₹0 🥰 | Cute Guide</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:ui-rounded,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#FFF8EC;background-image:radial-gradient(#f3e3b8 1.5px,transparent 1.5px);background-size:22px 22px;color:#2b2111;font-size:18px;line-height:1.7}
+.wrap{max-width:700px;margin:0 auto;padding:20px 16px 80px}
+.top{text-align:center;font-size:14px;font-weight:800;letter-spacing:.06em;color:#7c5e10;background:#fff;border:2px dashed #f5c542;border-radius:999px;padding:6px 12px}
+.hero{background:linear-gradient(135deg,#0b5c2e,#22c55e);color:#fff;border-radius:28px;padding:32px 24px;text-align:center;box-shadow:0 12px 30px rgba(11,92,46,.25);border:4px solid #fff}
+.hero h1{margin:8px 0;font-size:clamp(32px,6vw,46px);line-height:1.1}
+.hero p{font-size:19px;margin:8px 0;background:rgba(255,255,255,.15);border-radius:16px;padding:10px}
+.hero .coins{font-size:28px;letter-spacing:.2em;animation:bob 2.5s ease-in-out infinite;display:block}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.tldr{background:#fff;border-radius:24px;padding:20px;margin:-24px 10px 0;box-shadow:0 10px 26px rgba(0,0,0,.1);border:3px solid #f5c542;position:relative}
+.tldr ul{padding:0;margin:0}.tldr li{margin:10px 0;list-style:none;background:#FFF6D9;border-radius:14px;padding:8px 12px}
+.card{background:#fff;border-radius:24px;padding:20px;margin:16px 0;box-shadow:0 6px 18px rgba(0,0,0,.07);border:2.5px solid #ffe1a8}
+h2{font-size:24px;margin:32px 0 8px;text-decoration:underline wavy #f5c542 3px;text-underline-offset:6px}
+.big{font-size:30px;font-weight:900}
+.you{color:#0b5c2e;font-weight:800;background:#d9fbe5;padding:2px 12px;border-radius:999px;white-space:nowrap;border:2px solid #0b5c2e}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;font-size:17px}
+th,td{padding:12px;text-align:left;border-bottom:2px dashed #ffe1a8}th{background:#0b5c2e;color:#fff}
+tr td:last-child{font-weight:800;color:#0b5c2e}
+details{background:#fff;border-radius:18px;padding:14px 16px;margin:10px 0;border:2.5px solid #ffd88a}
+summary{font-weight:800;cursor:pointer;font-size:18px}
+input{font-size:20px;padding:14px;border-radius:16px;border:3px solid #0b5c2e;width:160px;max-width:55vw;background:#f6fff6}
+button{font-size:18px;padding:12px 20px;border-radius:999px;font-weight:800;cursor:pointer;margin-top:10px;transition:transform .12s}
+button:hover{transform:scale(1.06) rotate(-1deg)}
+.btn-check{border:0;background:#0b5c2e;color:#fff;box-shadow:0 6px 0 #063d1e}
+.btn-reset{background:#fff;color:#d6336c;border:3px solid #ffb3c7;box-shadow:0 6px 0 #ffd6e2;margin-left:8px}
+.foot{font-size:15px;color:#7c5e10;margin-top:28px;text-align:center}
+#out{background:#FFF6D9;border-radius:14px;padding:10px 12px;min-height:1.5em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">🌼 NPCI FAQs • 15 SEPT 2026 • STARTS 15 OCT 2026 • 2-MIN READ 🌼</div>
+<div class="hero">
+<span class="coins">🪙 ✨ 🪙 ✨ 🪙</span>
+<h1>You pay ₹0.<br>Always! 🥰</h1>
+<p>UPI is still free for you! Only <b>big shops</b> pay a tiny fee — only on bills <b>above ₹2,000</b>. 🛍️</p>
+</div>
+<div class="tldr"><ul>
+<li>🌟 <b>30-sec yummy summary:</b></li>
+<li>🧍 Friends & family, any amount → <span class="you">you pay ₹0</span></li>
+<li>🍪 Shop bill up to ₹2,000 → <span class="you">you pay ₹0</span> (95% of payments!)</li>
+<li>🏪 Bill above ₹2,000 → shop pays 0.4% to its bank, <span class="you">you still pay ₹0</span></li>
+</ul></div>
+
+<div class="card">🎀
+<div class="big">Example: ₹3,000 shoes 👟</div>
+<p>You pay <b>₹3,000</b>. Extra for you: <span class="you">₹0</span> 🎉<br>Shop gives ₹12 to its bank. Shop <b>cannot</b> ask it from you! 🙅</p>
+<p style="margin:0">📱 ₹50,000 phone → shop pays ₹200, you pay ₹0.<br>💎 ₹1,00,000 → shop pays ₹300 flat, you pay ₹0.</p>
+</div>
+
+<h2>🧮 1. Try it yourself!</h2>
+<div class="card" style="border-color:#9be3b4;text-align:center">
+<div style="font-size:40px">🧾✨</div>
+<label>Bill amount ₹<br><input id="amt" type="number" value="3000" placeholder="0"></label><br>
+<button class="btn-check" onclick="c()">✨ Check</button>
+<button class="btn-reset" onclick="r()">🧹 Reset</button>
+<p id="out" style="font-weight:800"></p>
+<p style="font-size:15px;color:#7c5e10;margin:0">🍬 ≤2000 → ₹0 • &gt;2000 → 0.4% • ≥75000 → ₹300 • You extra = always ₹0!</p>
+</div>
+
+<h2>💖 2. Will I be charged?</h2>
+<div class="card" style="border-color:#9be3b4"><b>Nope! 6 cute Nos: 🥳</b><br>
+❌ QR scan — tea stall to mall → ₹0<br>
+❌ Platform fee in apps (banned!) → ₹0<br>
+❌ Price rise — you pay MRP only!<br>
+❌ Monthly limit — unlimited free! ♾️<br>
+❌ AutoPay / bills / OTT / SIP → ₹0<br>
+❌ P2P or self-transfer → ₹0</div>
+
+<h2>🌈 3. What changes, then?</h2>
+<p>Only this, pinky promise 🤙: big shops pay 0.4% above ₹2,000, max ₹300. Tiny vendors (≤₹1L/month) pay <b>zero</b> — even on ₹5,000 sale! Fuel, insurance, bijli-paani-gas, railways, mobile, school fees → flat <b>₹5</b> only. Share-market → 0.02% only.</p>
+
+<details><summary>🍭 See full rate table</summary>
+<table><tr><th>You pay 🛒</th><th>Shop pays 🏪</th><th>You extra 🥰</th></tr>
+<tr><td>₹2,000</td><td>₹0</td><td>₹0</td></tr>
+<tr><td>₹3,000</td><td>₹12</td><td>₹0</td></tr>
+<tr><td>₹50,000</td><td>₹200</td><td>₹0</td></tr>
+<tr><td>₹75,000+</td><td>₹300 flat</td><td>₹0</td></tr></table>
+</details>
+
+<details><summary>💡 Why this fee?</summary>
+<p>Aug 2026: 2,451 cr payments worth ₹29.9 lakh cr in 1 month, live in 11 countries! Running this costs ~₹20,000 cr/year (servers, fraud-AI, cyber safety). Part helps tiny shops in villages, NE, J&K, Ladakh. 🌱</p>
+</details>
+
+<details><summary>🔍 Where to verify?</summary>
+<p>Only trust RBI, NPCI, Finance Ministry, PIB or your bank app. No WhatsApp forwards, ok? 🚫</p>
+</details>
+
+<p class="foot">Made with 💛 from NPCI FAQs Q1–Q42 • Credit-card-on-UPI has separate rules • <button class="btn-check" onclick="print()" style="padding:8px 14px">🖨️ Print / PDF</button></p>
+</div>
+<script>
+function c(){let v=+document.getElementById('amt').value||0,m=v<=2000?0:v>=75000?300:Math.round(v*0.004*100)/100;document.getElementById('out').textContent=v===0?'Type an amount to see magic! ✨':'Shop pays ₹'+m+' • You pay ₹'+v+' + ₹0 extra 🥰';}
+function r(){document.getElementById('amt').value=0;c();}
+c();
+</script>
+</body>
+</html>
